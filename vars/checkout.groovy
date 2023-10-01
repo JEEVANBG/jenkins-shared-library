@@ -7,5 +7,7 @@ def call (String git_branch = 'main' , String git_crendentials = null , String g
     sh 'pwd; ls -lrt'
 
 }
+#This is one way of using shared library, without calling directly the library name.
+#Here we don't use any pipeline block
 
 
