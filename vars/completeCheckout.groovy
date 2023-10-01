@@ -9,7 +9,7 @@ def call (String git_branch = 'main', String git_credentials = null , String git
         }
 
         stages {
-            stage {
+            stage('Check_out_with_pipeline') {
                 steps {
                     echo "This is complete groovy checkout script , we don't need to define pipeline in jenkins machine"
                     checkout ([$Class : 'GitSCM',
