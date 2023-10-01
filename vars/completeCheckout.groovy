@@ -3,9 +3,9 @@ def call (String git_branch = 'main', String git_credentials = null , String git
         agent any
 
         environment {
-            GIT_BRANCH = "$git_branch"
-            GIT_CREDENTIALS = "$git_credentials"
-            GIT_URL = "$git_url"
+            GIT_BRANCH = "${git_branch}"
+            GIT_CREDENTIALS = "${git_credentials}"
+            GIT_URL = "${git_url}"
         }
 
         stages {
