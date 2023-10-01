@@ -14,7 +14,7 @@ def call (String git_branch = 'main', String git_credentials = null , String git
                     echo "This is complete groovy checkout script , we don't need to define pipeline in jenkins machine"
                     checkout([$class: 'GitSCM',
                                 branches: [[name: "*/${GIT_BRANCH}"]],
-                                userRemoteConfigs: [[ credentialsId: "${GIT_CREDENTIALS}", url: "${GIT_URL}L"]]
+                                userRemoteConfigs: [[ credentialsId: "${GIT_CREDENTIALS}", url: "${GIT_URL}"]]
                     ])
 
                     sh 'pwd; ls -lrt'
