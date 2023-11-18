@@ -1,2 +1,2 @@
 @Library("docker_build_may_class")_
-gitcheckout('main','itd_jenkins','')
+gitcheckout('main','itd_jenkins','https://github.com/jaintpharsha/Devops-ITD-May-2023.git')
